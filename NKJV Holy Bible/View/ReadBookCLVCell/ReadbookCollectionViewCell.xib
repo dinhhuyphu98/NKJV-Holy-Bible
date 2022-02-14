@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ReadbookCollectionViewCell" customModule="NKJV_Holy_Bible" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="91"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="389" height="91"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FM9-9V-Hou">
+                        <rect key="frame" x="0.0" y="0.0" width="389" height="91"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.99607843159999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="FM9-9V-Hou" secondAttribute="trailing" id="O7B-kk-wII"/>
+                <constraint firstItem="FM9-9V-Hou" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OSH-hz-GaH"/>
+                <constraint firstAttribute="bottom" secondItem="FM9-9V-Hou" secondAttribute="bottom" id="eAN-6m-hH1"/>
+                <constraint firstItem="FM9-9V-Hou" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="l3w-eA-CT8"/>
+            </constraints>
+            <size key="customSize" width="389" height="91"/>
+            <connections>
+                <outlet property="contentBook" destination="FM9-9V-Hou" id="yyY-1p-Ix9"/>
+            </connections>
+            <point key="canvasLocation" x="245.6521739130435" y="108.81696428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

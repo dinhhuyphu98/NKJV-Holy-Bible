@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ListChapterCollectionViewCell" customModule="NKJV_Holy_Bible" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="153" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="153" height="127"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCW-Lu-YLo">
+                        <rect key="frame" x="0.0" y="0.0" width="153" height="127"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KoM-Sz-EEH">
+                                <rect key="frame" x="73" y="53" width="7.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99607843159999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.035294115539999997" green="0.12549020350000001" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="KoM-Sz-EEH" firstAttribute="centerX" secondItem="XCW-Lu-YLo" secondAttribute="centerX" id="ins-PQ-CSN"/>
+                            <constraint firstItem="KoM-Sz-EEH" firstAttribute="centerY" secondItem="XCW-Lu-YLo" secondAttribute="centerY" id="o5H-QU-Sjh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XCW-Lu-YLo" secondAttribute="bottom" id="Cqg-tD-58g"/>
+                <constraint firstItem="XCW-Lu-YLo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Guz-Hh-IOK"/>
+                <constraint firstAttribute="trailing" secondItem="XCW-Lu-YLo" secondAttribute="trailing" id="Zrq-PJ-c5b"/>
+                <constraint firstItem="XCW-Lu-YLo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wJi-6E-jnv"/>
+            </constraints>
+            <size key="customSize" width="153" height="127"/>
+            <connections>
+                <outlet property="ColorView" destination="XCW-Lu-YLo" id="T1v-Me-zVO"/>
+                <outlet property="NumberChapter" destination="KoM-Sz-EEH" id="JmG-Sg-CdL"/>
+            </connections>
+            <point key="canvasLocation" x="57.24637681159421" y="97.433035714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>

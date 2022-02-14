@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B064F28AE37C7F3E41BB97C /* Pods_NKJV_Holy_Bible.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D59AC9E8E10EAC89900A4 /* Pods_NKJV_Holy_Bible.framework */; };
+		D7091222273B86D400734144 /* ListChapterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7091220273B86D400734144 /* ListChapterCollectionViewCell.swift */; };
+		D7091223273B86D400734144 /* ListChapterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7091221273B86D400734144 /* ListChapterCollectionViewCell.xib */; };
+		D7091226273B958300734144 /* SeeAll2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7091224273B958300734144 /* SeeAll2CollectionViewCell.swift */; };
+		D7091227273B958300734144 /* SeeAll2CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7091225273B958300734144 /* SeeAll2CollectionViewCell.xib */; };
+		D75D77872754B9FB004D7268 /* OptionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75D77852754B9FB004D7268 /* OptionsCollectionViewCell.swift */; };
+		D75D77882754B9FB004D7268 /* OptionsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75D77862754B9FB004D7268 /* OptionsCollectionViewCell.xib */; };
+		D763385F273A1CAE00E8CA2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D763385E273A1CAE00E8CA2B /* AppDelegate.swift */; };
+		D7633861273A1CAE00E8CA2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7633860273A1CAE00E8CA2B /* SceneDelegate.swift */; };
+		D7633863273A1CAE00E8CA2B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7633862273A1CAE00E8CA2B /* SplashViewController.swift */; };
+		D7633866273A1CAE00E8CA2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7633864273A1CAE00E8CA2B /* Main.storyboard */; };
+		D7633868273A1CAF00E8CA2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7633867273A1CAF00E8CA2B /* Assets.xcassets */; };
+		D763386B273A1CAF00E8CA2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7633869273A1CAF00E8CA2B /* LaunchScreen.storyboard */; };
+		D7633877273A207200E8CA2B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7633876273A207200E8CA2B /* MainViewController.swift */; };
+		D763387C273A28AA00E8CA2B /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D763387B273A28AA00E8CA2B /* BooksModel.swift */; };
+		D763387E273A2D7300E8CA2B /* CommentariesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D763387D273A2D7300E8CA2B /* CommentariesModel.swift */; };
+		D7633881273A313200E8CA2B /* SqliteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7633880273A313200E8CA2B /* SqliteService.swift */; };
+		D7633884273A486E00E8CA2B /* HomeBooksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7633882273A486E00E8CA2B /* HomeBooksCollectionViewCell.swift */; };
+		D7633885273A486E00E8CA2B /* HomeBooksCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7633883273A486E00E8CA2B /* HomeBooksCollectionViewCell.xib */; };
+		D7633888273A4F8400E8CA2B /* bookitemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7633886273A4F8400E8CA2B /* bookitemCollectionViewCell.swift */; };
+		D7633889273A4F8400E8CA2B /* bookitemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7633887273A4F8400E8CA2B /* bookitemCollectionViewCell.xib */; };
+		D763388C273A52EE00E8CA2B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D763388B273A52EE00E8CA2B /* Extension.swift */; };
+		D77B7FB72760ABAA007B0179 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77B7FB62760ABAA007B0179 /* MenuViewController.swift */; };
+		D7952464273A6FA6002C3849 /* HomeBooks2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7952462273A6FA6002C3849 /* HomeBooks2CollectionViewCell.swift */; };
+		D7952465273A6FA6002C3849 /* HomeBooks2CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7952463273A6FA6002C3849 /* HomeBooks2CollectionViewCell.xib */; };
+		D7952468273A7475002C3849 /* bookitem2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7952466273A7475002C3849 /* bookitem2CollectionViewCell.swift */; };
+		D7952469273A7475002C3849 /* bookitem2CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7952467273A7475002C3849 /* bookitem2CollectionViewCell.xib */; };
+		D795246B273A8A77002C3849 /* ListchapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D795246A273A8A77002C3849 /* ListchapterViewController.swift */; };
+		D795CC6F2763BA7A0003A84E /* nkjv_2019062_NKJV.db in Resources */ = {isa = PBXBuildFile; fileRef = D795CC6E2763BA7A0003A84E /* nkjv_2019062_NKJV.db */; };
+		D7A643502744F33A002DA47A /* ReadbookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A6434E2744F33A002DA47A /* ReadbookCollectionViewCell.swift */; };
+		D7A643512744F33A002DA47A /* ReadbookCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A6434F2744F33A002DA47A /* ReadbookCollectionViewCell.xib */; };
+		D7B46911273B6F6B0058AC7F /* SeeAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B46910273B6F6B0058AC7F /* SeeAllViewController.swift */; };
+		D7B46914273B70610058AC7F /* SeeallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B46912273B70610058AC7F /* SeeallCollectionViewCell.swift */; };
+		D7B46915273B70610058AC7F /* SeeallCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B46913273B70610058AC7F /* SeeallCollectionViewCell.xib */; };
+		D7BCADD5273BD4B100B45021 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BCADD4273BD4B100B45021 /* OptionsViewController.swift */; };
+		D7CB599A2743561E007EAA22 /* timing_nkjvModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB59992743561E007EAA22 /* timing_nkjvModel.swift */; };
+		D7CB599C274357C0007EAA22 /* verse_nkjv_contentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB599B274357C0007EAA22 /* verse_nkjv_contentModel.swift */; };
+		D7CB599E274385F7007EAA22 /* ReadBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB599D274385F6007EAA22 /* ReadBookViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3CD5E466494EE4651CA14798 /* Pods-NKJV Holy Bible.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKJV Holy Bible.debug.xcconfig"; path = "Target Support Files/Pods-NKJV Holy Bible/Pods-NKJV Holy Bible.debug.xcconfig"; sourceTree = "<group>"; };
+		408253779B3A1C9F6D99368F /* Pods-NKJV Holy Bible.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKJV Holy Bible.release.xcconfig"; path = "Target Support Files/Pods-NKJV Holy Bible/Pods-NKJV Holy Bible.release.xcconfig"; sourceTree = "<group>"; };
+		BF9D59AC9E8E10EAC89900A4 /* Pods_NKJV_Holy_Bible.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKJV_Holy_Bible.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7091220273B86D400734144 /* ListChapterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChapterCollectionViewCell.swift; sourceTree = "<group>"; };
+		D7091221273B86D400734144 /* ListChapterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListChapterCollectionViewCell.xib; sourceTree = "<group>"; };
+		D7091224273B958300734144 /* SeeAll2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAll2CollectionViewCell.swift; sourceTree = "<group>"; };
+		D7091225273B958300734144 /* SeeAll2CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeAll2CollectionViewCell.xib; sourceTree = "<group>"; };
+		D75D77852754B9FB004D7268 /* OptionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsCollectionViewCell.swift; sourceTree = "<group>"; };
+		D75D77862754B9FB004D7268 /* OptionsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionsCollectionViewCell.xib; sourceTree = "<group>"; };
+		D763385B273A1CAE00E8CA2B /* NKJV Holy Bible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NKJV Holy Bible.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D763385E273A1CAE00E8CA2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7633860273A1CAE00E8CA2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D7633862273A1CAE00E8CA2B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		D7633865273A1CAE00E8CA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7633867273A1CAF00E8CA2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D763386A273A1CAF00E8CA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D763386C273A1CAF00E8CA2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7633876273A207200E8CA2B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D763387B273A28AA00E8CA2B /* BooksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksModel.swift; sourceTree = "<group>"; };
+		D763387D273A2D7300E8CA2B /* CommentariesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentariesModel.swift; sourceTree = "<group>"; };
+		D7633880273A313200E8CA2B /* SqliteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteService.swift; sourceTree = "<group>"; };
+		D7633882273A486E00E8CA2B /* HomeBooksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBooksCollectionViewCell.swift; sourceTree = "<group>"; };
+		D7633883273A486E00E8CA2B /* HomeBooksCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeBooksCollectionViewCell.xib; sourceTree = "<group>"; };
+		D7633886273A4F8400E8CA2B /* bookitemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookitemCollectionViewCell.swift; sourceTree = "<group>"; };
+		D7633887273A4F8400E8CA2B /* bookitemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bookitemCollectionViewCell.xib; sourceTree = "<group>"; };
+		D763388B273A52EE00E8CA2B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		D77B7FB62760ABAA007B0179 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D7952462273A6FA6002C3849 /* HomeBooks2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBooks2CollectionViewCell.swift; sourceTree = "<group>"; };
+		D7952463273A6FA6002C3849 /* HomeBooks2CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeBooks2CollectionViewCell.xib; sourceTree = "<group>"; };
+		D7952466273A7475002C3849 /* bookitem2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookitem2CollectionViewCell.swift; sourceTree = "<group>"; };
+		D7952467273A7475002C3849 /* bookitem2CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bookitem2CollectionViewCell.xib; sourceTree = "<group>"; };
+		D795246A273A8A77002C3849 /* ListchapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListchapterViewController.swift; sourceTree = "<group>"; };
+		D795CC6E2763BA7A0003A84E /* nkjv_2019062_NKJV.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = nkjv_2019062_NKJV.db; sourceTree = "<group>"; };
+		D7A6434E2744F33A002DA47A /* ReadbookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadbookCollectionViewCell.swift; sourceTree = "<group>"; };
+		D7A6434F2744F33A002DA47A /* ReadbookCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadbookCollectionViewCell.xib; sourceTree = "<group>"; };
+		D7B46910273B6F6B0058AC7F /* SeeAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllViewController.swift; sourceTree = "<group>"; };
+		D7B46912273B70610058AC7F /* SeeallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeallCollectionViewCell.swift; sourceTree = "<group>"; };
+		D7B46913273B70610058AC7F /* SeeallCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeallCollectionViewCell.xib; sourceTree = "<group>"; };
+		D7BCADD4273BD4B100B45021 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		D7CB59992743561E007EAA22 /* timing_nkjvModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timing_nkjvModel.swift; sourceTree = "<group>"; };
+		D7CB599B274357C0007EAA22 /* verse_nkjv_contentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verse_nkjv_contentModel.swift; sourceTree = "<group>"; };
+		D7CB599D274385F6007EAA22 /* ReadBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadBookViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7633858273A1CAE00E8CA2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B064F28AE37C7F3E41BB97C /* Pods_NKJV_Holy_Bible.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A223B1B24F0051D9663BC52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF9D59AC9E8E10EAC89900A4 /* Pods_NKJV_Holy_Bible.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C03BC6FB176BF20A06A8245 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CD5E466494EE4651CA14798 /* Pods-NKJV Holy Bible.debug.xcconfig */,
+				408253779B3A1C9F6D99368F /* Pods-NKJV Holy Bible.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D709121D273B865700734144 /* MainCLVCell */ = {
+			isa = PBXGroup;
+			children = (
+				D7633882273A486E00E8CA2B /* HomeBooksCollectionViewCell.swift */,
+				D7633883273A486E00E8CA2B /* HomeBooksCollectionViewCell.xib */,
+				D7633886273A4F8400E8CA2B /* bookitemCollectionViewCell.swift */,
+				D7633887273A4F8400E8CA2B /* bookitemCollectionViewCell.xib */,
+				D7952462273A6FA6002C3849 /* HomeBooks2CollectionViewCell.swift */,
+				D7952463273A6FA6002C3849 /* HomeBooks2CollectionViewCell.xib */,
+				D7952466273A7475002C3849 /* bookitem2CollectionViewCell.swift */,
+				D7952467273A7475002C3849 /* bookitem2CollectionViewCell.xib */,
+			);
+			path = MainCLVCell;
+			sourceTree = "<group>";
+		};
+		D709121E273B869700734144 /* SeeAllCLVCell */ = {
+			isa = PBXGroup;
+			children = (
+				D7B46912273B70610058AC7F /* SeeallCollectionViewCell.swift */,
+				D7B46913273B70610058AC7F /* SeeallCollectionViewCell.xib */,
+				D7091224273B958300734144 /* SeeAll2CollectionViewCell.swift */,
+				D7091225273B958300734144 /* SeeAll2CollectionViewCell.xib */,
+			);
+			path = SeeAllCLVCell;
+			sourceTree = "<group>";
+		};
+		D709121F273B86AA00734144 /* ListChapterCLVCell */ = {
+			isa = PBXGroup;
+			children = (
+				D7091220273B86D400734144 /* ListChapterCollectionViewCell.swift */,
+				D7091221273B86D400734144 /* ListChapterCollectionViewCell.xib */,
+			);
+			path = ListChapterCLVCell;
+			sourceTree = "<group>";
+		};
+		D75D77842754B9D3004D7268 /* OptionsCLVCell */ = {
+			isa = PBXGroup;
+			children = (
+				D75D77852754B9FB004D7268 /* OptionsCollectionViewCell.swift */,
+				D75D77862754B9FB004D7268 /* OptionsCollectionViewCell.xib */,
+			);
+			path = OptionsCLVCell;
+			sourceTree = "<group>";
+		};
+		D7633852273A1CAE00E8CA2B = {
+			isa = PBXGroup;
+			children = (
+				D763385D273A1CAE00E8CA2B /* NKJV Holy Bible */,
+				D763385C273A1CAE00E8CA2B /* Products */,
+				3C03BC6FB176BF20A06A8245 /* Pods */,
+				3A223B1B24F0051D9663BC52 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D763385C273A1CAE00E8CA2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D763385B273A1CAE00E8CA2B /* NKJV Holy Bible.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D763385D273A1CAE00E8CA2B /* NKJV Holy Bible */ = {
+			isa = PBXGroup;
+			children = (
+				D763388A273A52DC00E8CA2B /* Extension */,
+				D763387F273A30EF00E8CA2B /* Service */,
+				D7633878273A286F00E8CA2B /* DB */,
+				D7633873273A1F9600E8CA2B /* View */,
+				D7633872273A1F8900E8CA2B /* Model */,
+				D7633875273A1FD500E8CA2B /* ViewController */,
+				D763385E273A1CAE00E8CA2B /* AppDelegate.swift */,
+				D7633860273A1CAE00E8CA2B /* SceneDelegate.swift */,
+				D7633864273A1CAE00E8CA2B /* Main.storyboard */,
+				D7633867273A1CAF00E8CA2B /* Assets.xcassets */,
+				D7633869273A1CAF00E8CA2B /* LaunchScreen.storyboard */,
+				D763386C273A1CAF00E8CA2B /* Info.plist */,
+			);
+			path = "NKJV Holy Bible";
+			sourceTree = "<group>";
+		};
+		D7633872273A1F8900E8CA2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D763387B273A28AA00E8CA2B /* BooksModel.swift */,
+				D763387D273A2D7300E8CA2B /* CommentariesModel.swift */,
+				D7CB59992743561E007EAA22 /* timing_nkjvModel.swift */,
+				D7CB599B274357C0007EAA22 /* verse_nkjv_contentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7633873273A1F9600E8CA2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D75D77842754B9D3004D7268 /* OptionsCLVCell */,
+				D7A6434D2744F307002DA47A /* ReadBookCLVCell */,
+				D709121F273B86AA00734144 /* ListChapterCLVCell */,
+				D709121E273B869700734144 /* SeeAllCLVCell */,
+				D709121D273B865700734144 /* MainCLVCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7633875273A1FD500E8CA2B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D7633862273A1CAE00E8CA2B /* SplashViewController.swift */,
+				D7633876273A207200E8CA2B /* MainViewController.swift */,
+				D795246A273A8A77002C3849 /* ListchapterViewController.swift */,
+				D7B46910273B6F6B0058AC7F /* SeeAllViewController.swift */,
+				D7BCADD4273BD4B100B45021 /* OptionsViewController.swift */,
+				D7CB599D274385F6007EAA22 /* ReadBookViewController.swift */,
+				D77B7FB62760ABAA007B0179 /* MenuViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D7633878273A286F00E8CA2B /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				D795CC6E2763BA7A0003A84E /* nkjv_2019062_NKJV.db */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		D763387F273A30EF00E8CA2B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D7633880273A313200E8CA2B /* SqliteService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D763388A273A52DC00E8CA2B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D763388B273A52EE00E8CA2B /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D7A6434D2744F307002DA47A /* ReadBookCLVCell */ = {
+			isa = PBXGroup;
+			children = (
+				D7A6434E2744F33A002DA47A /* ReadbookCollectionViewCell.swift */,
+				D7A6434F2744F33A002DA47A /* ReadbookCollectionViewCell.xib */,
+			);
+			path = ReadBookCLVCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D763385A273A1CAE00E8CA2B /* NKJV Holy Bible */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D763386F273A1CAF00E8CA2B /* Build configuration list for PBXNativeTarget "NKJV Holy Bible" */;
+			buildPhases = (
+				421B3E932CC54BE310020102 /* [CP] Check Pods Manifest.lock */,
+				D7633857273A1CAE00E8CA2B /* Sources */,
+				D7633858273A1CAE00E8CA2B /* Frameworks */,
+				D7633859273A1CAE00E8CA2B /* Resources */,
+				6F747FEA81FD9A5C2E2827E9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NKJV Holy Bible";
+			productName = "NKJV Holy Bible";
+			productReference = D763385B273A1CAE00E8CA2B /* NKJV Holy Bible.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7633853273A1CAE00E8CA2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					D763385A273A1CAE00E8CA2B = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = D7633856273A1CAE00E8CA2B /* Build configuration list for PBXProject "NKJV Holy Bible" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7633852273A1CAE00E8CA2B;
+			productRefGroup = D763385C273A1CAE00E8CA2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D763385A273A1CAE00E8CA2B /* NKJV Holy Bible */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7633859273A1CAE00E8CA2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D763386B273A1CAF00E8CA2B /* LaunchScreen.storyboard in Resources */,
+				D7633889273A4F8400E8CA2B /* bookitemCollectionViewCell.xib in Resources */,
+				D795CC6F2763BA7A0003A84E /* nkjv_2019062_NKJV.db in Resources */,
+				D7952469273A7475002C3849 /* bookitem2CollectionViewCell.xib in Resources */,
+				D7633868273A1CAF00E8CA2B /* Assets.xcassets in Resources */,
+				D75D77882754B9FB004D7268 /* OptionsCollectionViewCell.xib in Resources */,
+				D7091227273B958300734144 /* SeeAll2CollectionViewCell.xib in Resources */,
+				D7952465273A6FA6002C3849 /* HomeBooks2CollectionViewCell.xib in Resources */,
+				D7633885273A486E00E8CA2B /* HomeBooksCollectionViewCell.xib in Resources */,
+				D7B46915273B70610058AC7F /* SeeallCollectionViewCell.xib in Resources */,
+				D7A643512744F33A002DA47A /* ReadbookCollectionViewCell.xib in Resources */,
+				D7091223273B86D400734144 /* ListChapterCollectionViewCell.xib in Resources */,
+				D7633866273A1CAE00E8CA2B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		421B3E932CC54BE310020102 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NKJV Holy Bible-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F747FEA81FD9A5C2E2827E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NKJV Holy Bible/Pods-NKJV Holy Bible-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NKJV Holy Bible/Pods-NKJV Holy Bible-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NKJV Holy Bible/Pods-NKJV Holy Bible-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7633857273A1CAE00E8CA2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7633863273A1CAE00E8CA2B /* SplashViewController.swift in Sources */,
+				D7CB599E274385F7007EAA22 /* ReadBookViewController.swift in Sources */,
+				D7952468273A7475002C3849 /* bookitem2CollectionViewCell.swift in Sources */,
+				D763385F273A1CAE00E8CA2B /* AppDelegate.swift in Sources */,
+				D7BCADD5273BD4B100B45021 /* OptionsViewController.swift in Sources */,
+				D763387E273A2D7300E8CA2B /* CommentariesModel.swift in Sources */,
+				D7633861273A1CAE00E8CA2B /* SceneDelegate.swift in Sources */,
+				D77B7FB72760ABAA007B0179 /* MenuViewController.swift in Sources */,
+				D7633881273A313200E8CA2B /* SqliteService.swift in Sources */,
+				D7B46911273B6F6B0058AC7F /* SeeAllViewController.swift in Sources */,
+				D75D77872754B9FB004D7268 /* OptionsCollectionViewCell.swift in Sources */,
+				D763388C273A52EE00E8CA2B /* Extension.swift in Sources */,
+				D7091222273B86D400734144 /* ListChapterCollectionViewCell.swift in Sources */,
+				D7091226273B958300734144 /* SeeAll2CollectionViewCell.swift in Sources */,
+				D7A643502744F33A002DA47A /* ReadbookCollectionViewCell.swift in Sources */,
+				D763387C273A28AA00E8CA2B /* BooksModel.swift in Sources */,
+				D7CB599C274357C0007EAA22 /* verse_nkjv_contentModel.swift in Sources */,
+				D7633888273A4F8400E8CA2B /* bookitemCollectionViewCell.swift in Sources */,
+				D7CB599A2743561E007EAA22 /* timing_nkjvModel.swift in Sources */,
+				D7633884273A486E00E8CA2B /* HomeBooksCollectionViewCell.swift in Sources */,
+				D7B46914273B70610058AC7F /* SeeallCollectionViewCell.swift in Sources */,
+				D7633877273A207200E8CA2B /* MainViewController.swift in Sources */,
+				D7952464273A6FA6002C3849 /* HomeBooks2CollectionViewCell.swift in Sources */,
+				D795246B273A8A77002C3849 /* ListchapterViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D7633864273A1CAE00E8CA2B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7633865273A1CAE00E8CA2B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7633869273A1CAF00E8CA2B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D763386A273A1CAF00E8CA2B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D763386D273A1CAF00E8CA2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D763386E273A1CAF00E8CA2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7633870273A1CAF00E8CA2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CD5E466494EE4651CA14798 /* Pods-NKJV Holy Bible.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4HRGKXJQHJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NKJV Holy Bible/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "DHPDEV.NKJV-Holy-Bible";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7633871273A1CAF00E8CA2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 408253779B3A1C9F6D99368F /* Pods-NKJV Holy Bible.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4HRGKXJQHJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NKJV Holy Bible/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "DHPDEV.NKJV-Holy-Bible";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7633856273A1CAE00E8CA2B /* Build configuration list for PBXProject "NKJV Holy Bible" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D763386D273A1CAF00E8CA2B /* Debug */,
+				D763386E273A1CAF00E8CA2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D763386F273A1CAF00E8CA2B /* Build configuration list for PBXNativeTarget "NKJV Holy Bible" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7633870273A1CAF00E8CA2B /* Debug */,
+				D7633871273A1CAF00E8CA2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7633853273A1CAE00E8CA2B /* Project object */;
+}
